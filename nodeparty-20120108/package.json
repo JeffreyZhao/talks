@@ -1,0 +1,13 @@
+{
+    "name": "nodeparty-201201018",
+    "description": "Talks at NodeParty (Shenzhen), Jan.08, 2012",
+    "author": "Jeffrey Zhao <jeffz@live.com>",
+    "dependencies": {
+        "eventproxy": "0.1.0",
+        "express": "2.5.4",
+        "jscex": "0.5.0",
+        "jscex-jit": "0.5.0",
+        "jscex-async": "0.5.0",
+        "underscore": "1.2.4"
+    }
+}

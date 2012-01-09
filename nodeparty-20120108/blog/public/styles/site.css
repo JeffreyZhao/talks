@@ -1,0 +1,504 @@
+﻿/******************************
+ * Reset
+ ******************************/
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 Verdana,"Lucida Grande",Geneva,Arial,sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/******************************
+ * Layout
+ ******************************/
+body {
+	min-width: 980px;
+}
+
+#header, #content, #footer-container
+{
+    min-width: 960px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#header
+{
+    height: 129px;
+}
+#footer
+{
+    background-color: #31363e;
+    color: #fff;
+    text-align: center;
+    height: 55px;
+}
+#content
+{
+    margin-bottom: 15px;
+}
+#sidebar
+{
+    color: #666;
+    width: 455px;
+    float: right;
+}
+#sidebar .left
+{
+    width: 49%;
+    float: left;
+}
+#sidebar .right
+{
+    width: 49%;
+    float: right;
+}
+#main
+{
+    margin-right: 455px;
+    padding-right: 10px;
+}
+
+.clear
+{
+    height: 0;
+    font-size: 0.01em;
+    clear: both;
+}
+
+
+/*****************************
+ * Header
+******************************/
+
+body
+{
+    background: url(images/webBg.gif) repeat-x;
+}
+
+#top
+{
+    height: 25px;
+}
+/* minyx */
+#minyx
+{
+    display: block;
+    background: url(images/minyx_lite.gif) no-repeat 0 0;
+    width: 130px;
+    height: 23px;
+    margin: 1px 0;
+    text-indent: -130px;
+    overflow: hidden;
+    float: left;
+}
+#minyx:hover
+{
+    background-position: 0 100%;
+}
+/* menu */
+#menu
+{
+    text-align: right;
+    line-height: 24px;
+    font-size: 10px;
+    overflow: hidden;
+}
+#menu li
+{
+    display: inline;
+    padding: 0 10px;
+    border-left: 1px solid #636870;
+    color: #fff;
+    font-weight: 700;
+}
+#menu li:first-child
+{
+    font-weight: 400;
+    border: 0 none;
+}
+#menu li:last-child
+{
+    padding-right: 0;
+}
+#menu a
+{
+    color: #fff;
+}
+#menu a:hover
+{
+    color: #708033;
+}
+/* title */
+#title
+{
+    float: left;
+    font-weight: 400;
+}
+#title a, #title small
+{
+    display: block;
+    color: #666;
+}
+#title a
+{
+    color: #4b5698;
+    font-size: 36px;
+    letter-spacing: -2px;
+}
+#title a:hover
+{
+    color: #ff3366;
+}
+#title small
+{
+    margin-top: -3px;
+}
+/* nav */
+#nav
+{
+    float: right;
+}
+#nav li
+{
+    float: left;
+    background: url(images/mnuSep.gif) no-repeat 0 1px;
+    font-size: 11px;
+    line-height: 75px;
+    padding: 0 15px;
+}
+#nav li:last-child
+{
+    padding-right: 0;
+}
+#nav .rss
+{
+    padding: 0 0 0 15px;
+}
+#nav .rss a
+{
+    width: 64px;
+    height: 42px;
+    margin-top: 33px;
+    background: url(images/itemFeed.gif) no-repeat 100% 100%;
+    text-indent: -64px;
+    overflow: hidden;
+}
+#nav .rss a:hover
+{
+    background-position: 100% 0;
+}
+#nav a
+{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #565e39;
+}
+#nav a:hover
+{
+    color: #f36;
+}
+
+#nav .current a
+{
+    text-decoration: underline;
+    background: url(images/mnuIndicator.gif) no-repeat 50% 0;
+}
+
+/***************************************************************************
+ * footer
+******************************/
+#footer-container
+{    
+    position: relative;
+}
+#logo
+{
+    display: block;
+    background: url(images/spiga.gif) no-repeat 0 0;
+    width: 45px;
+    height: 45px;
+    text-indent: 45px;
+    overflow: hidden;
+    position:absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#logo:hover
+{
+    background-position: 0 100%;
+}
+
+#copyright
+{
+    line-height: 55px;
+}
+
+
+/***************************************************************************
+ * content
+******************************/
+/* post */
+.post {
+    margin-bottom: 30px;
+}
+
+.post h2 {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 120%;
+    margin: 0;
+    padding: 5px 0;
+    background-image: url(images/dotsH.gif);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+.post h2 a
+{
+    color: #69c;    
+}
+.post h2 a:hover
+{
+    color: #f36;
+}
+.post small {
+    display: block;
+    text-align: right;
+}
+.post small, .post small a
+{
+    color: #ababab;
+}
+.post small a:hover {
+    color: #369;
+    text-decoration: underline;
+}
+.post .entry {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    font-family: "Trebuchet MS", Georgia,"Times New Roman",Times,sans-serif;
+}
+
+.post .entry a {
+    color: #3d81ee;
+    border-bottom: 1px dashed;
+}
+
+.post .entry a:hover {
+    color: #f30;
+}
+
+.post .metadata {
+    border: 3px double #eee;
+    border-width: 3px 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 4px 0;
+}
+.post .metadata a
+{    
+    color: #00a200;
+}
+.post .metadata a:hover
+{
+    color:#333;
+}
+.post .metadata li
+{
+    padding: 1px 0 5px 20px;
+}
+.post .metadata .icon
+{
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 -171px;
+}
+.post .metadata .comment
+{
+    background-image: url(images/icon_voice.gif);    
+    float: right;
+    font-weight: 700;
+}
+.post .metadata .cat
+{
+    background-image: url(images/icon_folder.gif);
+}
+.post .metadata .bullet
+{
+    background-image: url(images/icon_bullet.gif);
+}
+
+/* pager */
+#pager {
+    font-size: 12px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+#pager a {
+    border: 1px solid #9AAFE5;
+    color: #2E6AB1;
+    margin-right: 0px;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+#pager span.current {
+    background-color: #2E6AB1;
+    border: 1px solid navy;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-right: 0px;
+    padding: 2px 4px;
+}
+
+/* sidebar */
+#sidebar {
+	color: #666;
+	font-size: 12px;
+    word-wrap: break-word;
+}
+
+#sidebar .block {
+	margin-bottom: 10px;
+}
+
+#sidebar .block h2 {
+	font-size: 14px;
+	text-align: center;
+}
+
+#sidebar .block.about {
+	background: #F8F8EE;
+	border: 1px solid #EEE;
+	padding: 5px;
+}
+
+#sidebar .block.about h2 {
+	border-bottom: 3px solid #DCD6B3;
+	padding: 5px 0 5px 0;
+	margin-bottom: 6px;
+}
+
+#sidebar .block.about p {
+	line-height: 20px;
+	margin-top: 6px;
+}
+
+#sidebar #search {
+	background-color: #444;
+    border: 1px solid #565656;
+    padding: 5px;
+}
+
+#sidebar #search .submit {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 21px;
+    position: relative;
+    float: right;
+}
+
+#sidebar #search input.keyword {
+	border: solid 1px gray;
+    font-size: 11px;
+    padding: 2px;
+    width: 76%;
+    height: 15px;
+}
+
+#sidebar #search label {
+    background-image: url(images/icon_search.gif);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-indent: -9000em;
+    padding: 0px 0 3px 23px;
+}
+
+#sidebar .block.list h2 {
+	padding: 5px 0px;
+	text-transform: uppercase;
+	margin-bottom: 4px;
+}
+
+#sidebar .block.list.big h2 {
+	color: black;
+	border-bottom: 3px solid #DDD;
+	font-weight: bold;
+}
+
+#sidebar .block.list.small h2 {
+	background-color: #47505F;
+	color: white;
+	font-weight: normal;
+}
+
+#sidebar .block.list a {
+    color: #06c;
+}
+
+#sidebar .block.list a:hover {
+    color: #f30;
+}
+
+#sidebar .block.list li {
+	border-bottom: 1px solid #EEE;
+	padding: 4px 0;
+}
+
+#sidebar .block.list ul.voice li {
+	background-image: url(images/icon_voice.gif);
+	background-repeat: no-repeat;
+	background-position: 0px -167px;
+	padding-left: 20px;
+}
+
+#sidebar .block.list .icon a {
+	background-repeat: no-repeat;
+	padding: 3px 0 0 20px;
+}
+
+#sidebar .block.list .icon a:hover {
+	background-position: 0px -170px;
+}
+
+#sidebar .block.list .icon.chain a {
+	background-image: url(images/icon_link.gif);
+}
+
+#sidebar .block.list .icon.bullet a {
+	background-image: url(images/icon_bullet.gif);
+}
+
+#sidebar .block.list .icon.folder a {
+	background-image: url(images/icon_folder.gif);
+}
+
+#sidebar .block.list .icon a.mini_rss {
+	float: right;
+	text-indent: -9000em;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-top: -2px;
+    display: block;
+    text-decoration:none;
+    background-image: url(images/icon_rss.gif);
+}
