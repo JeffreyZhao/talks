@@ -4,7 +4,7 @@
         --js wind-core.js \
         --js wind-builderbase.js \
         --js wind-async.js \
-        --js sorting-animations.js \
+        --js sorting-animations.aot.js \
         --js_output_file all.min.js
         
 同时生成SourceMap文件：
@@ -13,7 +13,7 @@
         --js wind-core.js \
         --js wind-builderbase.js \
         --js wind-async.js \
-        --js sorting-animations.js \
+        --js sorting-animations.aot.js \
         --js_output_file all.min.js \
         --create_source_map all.min.js.map \
         --source_map_format=V3
