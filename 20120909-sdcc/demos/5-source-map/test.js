@@ -252,21 +252,3 @@ var compile = function (code, binders) {
     }
 }
 
-if (module.parent) { // command
-    exports.compile = compile;
-} else {
-
-    var argv = require("optimist")
-        .usage("Usage: $0 [options]")
-        .demand("input").alias("input", "i").describe("input", "The input file")
-        .demand("output").alias("output", "o").describe("output", "The output file")
-        .default("root", "Wind").describe("root", "The name of root")
-        .argv;
-
-    Wind.compile.rootName = rootName = argv.root;
-
-    var fs = require("fs");
-    var code = fs.readFileSync(argv.input, "utf-8");
-    var newCode = compile(code);
-    fs.writeFileSync(argv.output, newCode, "utf-8");
-}
