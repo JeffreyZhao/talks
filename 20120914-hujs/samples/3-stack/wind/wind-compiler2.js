@@ -1214,7 +1214,7 @@
     var allSourceMaps = {};
     
     var rebuildStack = function (stack) {
-        return stack.replace(/at eval \((.*)\)$/mg, function (s) {
+        return stack.replace(/\((.*)\)$/mg, function (s) {
             var match = /\((.*):(\d+):(\d+)\)/.exec(s);
             var url = match[1];
             var line = parseInt(match[2], 10);
@@ -1230,7 +1230,7 @@
             
             var posInfo = sourceMap.file + ":" + pos.line + ":" + (pos.column + 1);
             
-            return "at eval (" + url + ":" + line + ":" + column + " => " + posInfo + ")"
+            return "(" + url + ":" + line + ":" + column + " => " + posInfo + ")"
         });
     };
     
