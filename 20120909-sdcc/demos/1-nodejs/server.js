@@ -4,6 +4,11 @@ var url = require("url");
 var path = require("path");
 
 var transferFile = function (request, response) {
+    if (path.normalize(decodeURI(request.url)) !== decodeURI(request.url)) {
+        response.writeHead(403);
+        response.end();
+        return;
+    }
     var uri = url.parse(request.url).pathname;
     var filepath = path.join(process.cwd(), uri);
 
